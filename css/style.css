@@ -626,9 +626,10 @@ h3.my-profession
     line-height: 25px;
 }
 /* portfolio */
-.portfolio .container
+.portfolio .container .row
 {
     padding-bottom: 40px;
+   
 }
 .portfolio .portfolio-heading
 {
@@ -639,6 +640,7 @@ h3.my-profession
 .protfolio .portfolio-heading h2 
 {
     color: var(--text-black-900);
+    text-transform: capitalize;
     font-weight: 500;
 }
 .portfolio .portfolio-item
@@ -657,6 +659,31 @@ h3.my-profession
 .portfolio .portfolio-item-inner .portfolio-img img{
     width: 100%;
     display: block;
+
+}
+
+.portfolio .portfolio-item-inner .portfolio-img h4
+{
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+.portfolio .portfolio-item-inner .portfolio-img h1
+{
+    font-size: 25px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+.portfolio .portfolio-item-inner .portfolio-img p
+{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+    font-weight: 400;
 }
 /* contact */
 

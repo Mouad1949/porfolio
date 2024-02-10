@@ -1,6 +1,8 @@
+
+
 // =========================typing animation ==================
 var typed = new Typed(".typing",{
-    strings:["Web Devloper","Front End","Back End"],
+    strings:["full Stack","Front End","Back End"],
     typeSpeed:100,
     backSpeed:60,
     loop:true
@@ -94,6 +96,24 @@ const nav =document.querySelector(".nav"),
         
     }
     
+// ===================Send Email ==============
 
+function sendEmail(){
+    var params = {
+        name: document.getElementById('name').value,
+        email_id: document.getElementById('email').value,
+        subject: document.getElementById('subject').value,
+        message: document.getElementById('message').value
+    };
 
-     
+    const serviceID = "service_cdxz72o";
+    const templateID = "template_jkwltxa";
+    emailjs.send(serviceID, templateID, params).then((res) => {
+        document.getElementById('name').value = "";
+        document.getElementById('email').value = "";
+        document.getElementById('subject').value = "";
+        document.getElementById('message').value = "";
+        // console.log(res);
+        alert('Your message sent successfully');
+    }).catch((err) => console.log(err));
+}
