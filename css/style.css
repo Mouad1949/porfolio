@@ -651,6 +651,7 @@ h3.my-profession
 }
 .portfolio .portfolio-item-inner
 {
+   
     border: 6px solid var(--bg-black-100);
     border-radius: 10px;
     overflow: hidden;
@@ -658,9 +659,11 @@ h3.my-profession
 }
 .portfolio .portfolio-item-inner .portfolio-img img{
     width: 100%;
-    display: block;
+    display: flex;
 
 }
+
+
 
 .portfolio .portfolio-item-inner .portfolio-img h4
 {
@@ -775,6 +778,12 @@ h3.my-profession
     height: 50px;
     padding: 0 50px;
 }
+@media (max-width: 2000px){
+    .portfolio .portfolio-item-inner .portfolio-img .tcexam{
+        height: 220px;
+    
+    }
+}
 @media (max-width: 1199px)
 {
     .section .container
@@ -808,6 +817,10 @@ h3.my-profession
         display: block;
         margin-left: 0;
     }
+    .portfolio .portfolio-item-inner .portfolio-img .tcexam{
+        height: 195px;
+    
+    }
 }
 @media (max-width: 991px)
 {
@@ -828,6 +841,7 @@ h3.my-profession
     {
         display: none;
     }
+  
 }
 @media (max-width: 767px)
 {
@@ -843,6 +857,9 @@ h3.my-profession
         flex: 0 0 100%;
         max-width: 100%;
     }
+
+
+
     
 }
 
